@@ -1,0 +1,57 @@
+{
+  "model": "model_1",
+  "document": "Section 071400 - Bituminous Waterproofing System",
+  "total_contradictions": 10,
+  "contradictions": [
+    {
+      "Statement1": "Performance Requirement §3.01.1 specifies a minimum membrane thickness of 4mm: \"The SBS modified bitumen waterproofing membrane shall be torch-applied and shall have a minimum thickness of 4mm.\"",
+      "Statement2": "Products §7.01.1 mandates a 5mm thickness with no acceptable alternatives: \"Membrane thickness shall be 5mm. Thinner membranes shall not be accepted regardless of manufacturer claims of equivalent performance.\"",
+      "Reasoning": "Performance allows ≥4mm but Products fixes the thickness at 5mm and rejects thinner options. A 4mm membrane would comply with §3 but be non-compliant under §7."
+    },
+    {
+      "Statement1": "§3.01.2 requires the protection screed to reach a minimum compressive strength of 30 N/mm² at 28 days.",
+      "Statement2": "§7.02.2 sets the minimum at 25 N/mm² at 28 days, tested per BS EN 12390-3.",
+      "Reasoning": "Two clauses prescribe different minimum strengths for the same screed at the same age. A screed achieving 26 N/mm² would meet §7 but fail §3."
+    },
+    {
+      "Statement1": "Products §7.01.3 specifies mesh aperture as 100mm × 100mm with 4mm wire diameter.",
+      "Statement2": "Execution §8.05.3 instructs installing welded wire mesh with 150mm × 150mm grid spacing within the protection screed.",
+      "Reasoning": "The mesh aperture differs between Products (100×100mm) and Execution (150×150mm) for what should be a single reinforcement product in the same screed."
+    },
+    {
+      "Statement1": "General §1.02.4 places fire watch responsibility on the Main Contractor: \"Temporary fire protection... shall be provided and maintained by the Main Contractor at his cost.\"",
+      "Statement2": "Execution §8.04.6 places it on the Subcontractor: \"The Waterproofing Subcontractor shall be solely responsible for providing and maintaining fire watch personnel... and shall include all such costs in his tender price.\"",
+      "Reasoning": "Both clauses assign sole responsibility for fire watch to different parties (Main Contractor vs Waterproofing Subcontractor). Both cannot be true simultaneously; tender allocation depends on a single named responsible party."
+    },
+    {
+      "Statement1": "Warranty §6.01 requires a joint and several ten (10) year warranty from the Main Contractor and his supplier/subcontractor for Work identified within this Section.",
+      "Statement2": "Products §7.03.2 requires the same Main Contractor, supplier and manufacturer to provide a fifteen (15) years warranty for the entire bituminous waterproofing system.",
+      "Reasoning": "The same scope is warranted by the same parties for two different durations. Performance bonds and tender pricing cannot reflect both."
+    },
+    {
+      "Statement1": "Warranty §6.03 keeps substrate liability with the Main Contractor for the full warranty period and prevents transfer through subcontractor acceptance: \"No subsequent acceptance of the substrate by any subcontractor shall transfer or diminish the Main Contractor's liability under this clause.\"",
+      "Statement2": "Execution §8.01.5 transfers substrate liability to the Waterproofing Subcontractor upon commencement of priming: \"Commencement of priming by the Waterproofing Subcontractor shall constitute final and unconditional acceptance of the substrate. The Waterproofing Subcontractor thereafter accepts full liability...\"",
+      "Reasoning": "§6 explicitly states substrate liability cannot be transferred by subcontractor acceptance. §8 transfers it via subcontractor acceptance. The clauses directly contradict each other on the transfer mechanism."
+    },
+    {
+      "Statement1": "Execution §8.06.4 places 100% of flood test remedial cost on the Subcontractor regardless of cause: \"All costs of remedial works arising from flood test failures... shall be borne entirely by the Waterproofing Subcontractor... irrespective of the cause of the failure.\"",
+      "Statement2": "Warranty §6.04 splits the cost 50/50 between Employer and Main Contractor when failures are substrate-attributable, and explicitly holds the Subcontractor harmless.",
+      "Reasoning": "For substrate-related flood test failures, §8 says the Subcontractor pays everything while §6 says the Subcontractor pays nothing and Employer/Main Contractor split 50/50. The clauses prescribe incompatible cost allocations for the same failure type."
+    },
+    {
+      "Statement1": "§7.01.2 (Products) requires the primer to cure for a minimum of 24 hours before membrane application, and explicitly prohibits torching the membrane onto primer that has not fully cured.",
+      "Statement2": "§8.03.2 (Execution) requires the membrane to be applied within 4 hours of primer application, while the primer is still tacky to the touch.",
+      "Reasoning": "Two clauses require opposite physical states of the primer at the moment the membrane is applied — fully cured (24h+) versus uncured and tacky (within 4h). Both conditions cannot be satisfied at once."
+    },
+    {
+      "Statement1": "Environmental §4.03 specifies that wind speeds in excess of 30 km/h shall halt torch-applied membrane works due to flame stability and fire safety concerns.",
+      "Statement2": "The Execution section emphasises continuous flame control during torching operations, implying a more restrictive operational wind threshold than the 30 km/h hard stop given in §4.",
+      "Reasoning": "The Environmental section gives a clear 30 km/h limit while the Execution section's emphasis on flame stability suggests a stricter working threshold, creating ambiguity for site personnel about when work must be suspended."
+    },
+    {
+      "Statement1": "§8.04.2 specifies that end laps shall be a minimum of 150mm.",
+      "Statement2": "§8.04.2 also states that end laps shall be staggered by at least 300mm between adjacent rolls.",
+      "Reasoning": "The same paragraph gives both 150mm and 300mm as minimum dimensions for end laps, which creates an inconsistency in the required end lap geometry."
+    }
+  ]
+}

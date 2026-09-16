@@ -1,0 +1,46 @@
+{
+  "document": "Section 071400 - Bituminous Waterproofing System",
+  "total_contradictions": 8,
+  "contradictions": [
+    {
+      "Statement1": "The protection screed laid above the membrane shall achieve a minimum compressive strength of 30N/mm² at 28 days.",
+      "Statement2": "The protection screed shall achieve a compressive strength of not less than 25N/mm² at 28 days.",
+      "Reasoning": "These clauses specify different minimum 28-day compressive strengths for the same protection screed. The document does not state which requirement governs."
+    },
+    {
+      "Statement1": "Primer shall be applied in two coats... Allow primer to cure for a minimum of 24 hours before membrane application.",
+      "Statement2": "The membrane shall be applied within 4 hours of primer application, while the primer is still tacky to the touch.",
+      "Reasoning": "The membrane cannot both be applied no earlier than 24 hours after primer application and within 4 hours after primer application."
+    },
+    {
+      "Statement1": "Mesh aperture shall be 100mm x 100mm with wire diameter of 4mm.",
+      "Statement2": "Where reinforcement is required, install welded wire mesh with 150mm x 150mm grid spacing.",
+      "Reasoning": "The product requirements and execution requirements prescribe incompatible grid spacings for the welded wire reinforcement mesh used in the protection screed."
+    },
+    {
+      "Statement1": "Temporary fire protection during installation... shall be provided and maintained by the Main Contractor at his cost. The Main Contractor shall station dedicated fire watch personnel.",
+      "Statement2": "The Waterproofing Subcontractor shall be solely responsible for providing and maintaining fire watch personnel, fire extinguishers, fire blankets and emergency response measures during all torch-applied membrane operations.",
+      "Reasoning": "Both the Main Contractor and the Waterproofing Subcontractor are assigned sole responsibility and cost for the same fire-watch and fire-protection work during torch-applied operations."
+    },
+    {
+      "Statement1": "Approval of the mock-up as final in-place work shall be at the sole discretion of the Engineer / Consultants, and the Engineer's written approval shall be the conclusive determination of acceptance.",
+      "Statement2": "The Architect's written sign-off on the mock-up shall be required before the main works may commence, and the Architect's decision on the acceptability of the mock-up shall be final and binding on all parties.",
+      "Reasoning": "The Engineer/Consultants and the Architect are each given final, conclusive approval authority over the same mock-up, without establishing which decision governs if they differ."
+    },
+    {
+      "Statement1": "The Main Contractor and his Bituminous Waterproofing Manufacturer or Supplier or Subcontractor... shall provide a joint and several ten (10) year warranty.",
+      "Statement2": "The Main Contractor together with the supplier/subcontractor and manufacturer shall be required to provide a fifteen (15) years warranty for the entire bituminous waterproofing system.",
+      "Reasoning": "The specification establishes two different warranty periods for the waterproofing system and its responsible parties, without clarifying whether the 15-year requirement supersedes the 10-year joint-and-several warranty."
+    },
+    {
+      "Statement1": "The Main Contractor shall remain solely liable for all substrate defects identified at any time during the warranty period... No subsequent acceptance of the substrate by any subcontractor shall transfer or diminish the Main Contractor's liability.",
+      "Statement2": "Commencement of priming by the Waterproofing Subcontractor shall constitute final and unconditional acceptance of the substrate. The Waterproofing Subcontractor thereafter accepts full liability for any defects in the waterproofing system, including those arising from substrate-related causes.",
+      "Reasoning": "One clause retains sole substrate-defect liability with the Main Contractor despite subcontractor acceptance, while the other transfers full liability for substrate-related waterproofing defects to the Waterproofing Subcontractor after priming."
+    },
+    {
+      "Statement1": "Where flood test failures or other waterproofing failures are determined... attributable wholly or in part to substrate conditions, the cost of remedial works shall be apportioned between the Employer and the Main Contractor on a 50/50 basis, with the Waterproofing Subcontractor held harmless.",
+      "Statement2": "All costs of remedial works arising from flood test failures... shall be borne entirely by the Waterproofing Subcontractor... irrespective of the cause of the failure.",
+      "Reasoning": "For flood-test failures caused by substrate conditions, one clause requires the Employer and Main Contractor to share remedial costs and holds the Waterproofing Subcontractor harmless, while the other makes the Waterproofing Subcontractor bear all costs regardless of cause."
+    }
+  ]
+}

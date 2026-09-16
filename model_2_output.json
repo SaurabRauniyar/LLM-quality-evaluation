@@ -1,0 +1,57 @@
+{
+  "model": "model_2",
+  "document": "Section 071400 - Bituminous Waterproofing System",
+  "total_contradictions": 10,
+  "contradictions": [
+    {
+      "Statement1": "Section 3 says the waterproofing membrane should be at least 4mm thick.",
+      "Statement2": "Section 7 says the waterproofing membrane must be 5mm thick.",
+      "Reasoning": "Different membrane thickness requirements are given in different sections of the document."
+    },
+    {
+      "Statement1": "Section 3 requires the protection screed to achieve a minimum compressive strength of 30 N/mm² at 28 days.",
+      "Statement2": "Section 7 requires the protection screed to achieve a minimum compressive strength of 25 N/mm² at 28 days.",
+      "Reasoning": "The two sections give different minimum strength values for the same protection screed."
+    },
+    {
+      "Statement1": "The Products section calls for a mesh size of 100mm × 100mm.",
+      "Statement2": "The Execution section calls for a mesh size of 150mm × 150mm.",
+      "Reasoning": "The mesh size specified in Products is different from the mesh size specified in Execution."
+    },
+    {
+      "Statement1": "§1.02.4 says the Main Contractor shall provide fire watch for all torch-on operations.",
+      "Statement2": "§8.04.6 says the Waterproofing Subcontractor shall be solely responsible for providing fire watch.",
+      "Reasoning": "The document is unclear about who provides fire watch — one section says the Main Contractor, another says the Subcontractor."
+    },
+    {
+      "Statement1": "Section 6 mentions a 10-year warranty for the waterproofing work.",
+      "Statement2": "Section 7.03 mentions a 15-year warranty for the bituminous waterproofing system.",
+      "Reasoning": "Two different warranty periods are given for what looks like the same scope of work (10 vs 15 years)."
+    },
+    {
+      "Statement1": "§7.01.2 requires the primer to cure for a minimum of 24 hours before the membrane is applied.",
+      "Statement2": "§8.03.2 requires the membrane to be applied within 4 hours of priming while the primer is still tacky.",
+      "Reasoning": "Different waiting times after primer application are given — 24 hours cure versus a 4-hour tacky window."
+    },
+    {
+      "Statement1": "§4.03 sets a wind speed limit of 30 km/h for torch-applied works.",
+      "Statement2": "Other parts of the specification imply a different operational wind limit may apply during membrane installation activities.",
+      "Reasoning": "There is ambiguity in the document regarding the wind speed threshold above which torch-applied work must be suspended."
+    },
+    {
+      "Statement1": "§4.02 limits substrate moisture content to 5% by weight as measured by a calibrated moisture meter.",
+      "Statement2": "§8.01.2 references substrate moisture content not exceeding 5% by weight at time of priming.",
+      "Reasoning": "Substrate moisture content is addressed in two different sections with potentially different intent — one for general membrane application and one specifically for priming — creating ambiguity for site personnel."
+    },
+    {
+      "Statement1": "§3.02.1 specifies tensile strength of not less than 800 N/50mm in the longitudinal direction.",
+      "Statement2": "§3.02.1 specifies tensile strength of not less than 800 N/50mm in the transverse direction.",
+      "Reasoning": "The specification requires the same tensile strength value (800 N/50mm) in two different directions, which may not be physically achievable for a directionally reinforced polyester carrier."
+    },
+    {
+      "Statement1": "§3.01.4 states the membrane shall remain stable under continuous service temperatures from -10°C to +80°C with no flow, blistering, or delamination.",
+      "Statement2": "The Execution section implies a narrower service temperature window during certain installation and curing conditions, particularly above 4 hours of direct sun exposure.",
+      "Reasoning": "The service temperature range stated in Performance may not be consistent with the Execution section's references to thermal protection during early curing."
+    }
+  ]
+}

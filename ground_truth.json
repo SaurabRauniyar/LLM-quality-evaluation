@@ -1,0 +1,56 @@
+{
+  "document": "Section 071400 - Bituminous Waterproofing System",
+  "total_contradictions": 10,
+  "contradictions": [
+    {
+      "Statement1": "§3.01.1 (Performance Requirement): \"The SBS modified bitumen waterproofing membrane shall be torch-applied and shall have a minimum thickness of 4mm.\"",
+      "Statement2": "§7.01.1 (Products): \"Membrane thickness shall be 5mm. Thinner membranes shall not be accepted regardless of manufacturer claims of equivalent performance.\"",
+      "Reasoning": "§3 sets 4mm as the minimum acceptable thickness, but §7 explicitly mandates 5mm and rejects any thinner membrane. A 4mm membrane satisfies §3 but is non-compliant under §7, so both clauses cannot be enforced simultaneously. The contractor cannot procure a single membrane that complies with both."
+    },
+    {
+      "Statement1": "§3.01.2 (Performance Requirement): \"The protection screed laid above the membrane shall achieve a minimum compressive strength of 30N/mm² at 28 days.\"",
+      "Statement2": "§7.02.2 (Products): \"The protection screed shall achieve a compressive strength of not less than 25N/mm² at 28 days when tested in accordance with BS EN 12390-3.\"",
+      "Reasoning": "Both clauses prescribe minimum compressive strengths for the same screed at the same age, but at different values. A screed achieving 26 N/mm² would pass §7's threshold while failing §3's. Mix design and acceptance testing cannot satisfy both minimums at once."
+    },
+    {
+      "Statement1": "§7.01.3 (Products): \"Mesh aperture shall be 100mm x 100mm with wire diameter of 4mm.\"",
+      "Statement2": "§8.05.3 (Execution): \"Where reinforcement is required, install welded wire mesh with 150mm x 150mm grid spacing, placed centrally within the depth of the screed on proprietary plastic spacers.\"",
+      "Reasoning": "Products specifies the mesh aperture as 100×100mm; Execution specifies 150×150mm grid spacing for the same reinforcement in the same protection screed. Only one mesh can be physically installed, so the procurement and the installation specifications are incompatible."
+    },
+    {
+      "Statement1": "§1.02.4 (General): \"Temporary fire protection during installation of flammable products and torch-on modified bitumen membrane shall be provided and maintained by the Main Contractor at his cost. The Main Contractor shall station dedicated fire watch personnel at the work area for the duration of all torch-applied operations…\"",
+      "Statement2": "§8.04.6 (Execution): \"The Waterproofing Subcontractor shall be solely responsible for providing and maintaining fire watch personnel, fire extinguishers, fire blankets and emergency response measures during all torch-applied membrane operations. The Subcontractor shall include all such costs in his tender price…\"",
+      "Reasoning": "§1 assigns sole responsibility and cost of fire watch to the Main Contractor; §8 assigns the same sole responsibility and cost to the Waterproofing Subcontractor. Two different parties cannot both bear sole responsibility for the same scope. Tender pricing, indemnity, and on-site supervision arrangements all depend on this being unambiguous."
+    },
+    {
+      "Statement1": "§5 (Mock-Up): \"Approval of the mock-up as final in-place work shall be at the sole discretion of the Engineer / Consultants, and the Engineer's written approval shall be the conclusive determination of acceptance.\"",
+      "Statement2": "§8.02.1 (Execution): \"…for inspection and acceptance by the Architect. The Architect's written sign-off on the mock-up shall be required before the main works may commence, and the Architect's decision on the acceptability of the mock-up shall be final and binding on all parties.\"",
+      "Reasoning": "§5 vests sole and conclusive approval authority in the Engineer/Consultants; §8 vests the same final and binding authority in the Architect. Two parties cannot both hold sole and final authority over the same approval gate. The project cannot determine whose written sign-off is needed to release the main works."
+    },
+    {
+      "Statement1": "§6.01 (Warranty): \"The Main Contractor and his Bituminous Waterproofing Manufacturer or Supplier or Subcontractor as the case may be shall provide a joint and several ten (10) year warranty for Work identified within this Section against material defects, workmanship…\"",
+      "Statement2": "§7.03.2 (Products): \"The Main Contractor together with the supplier/subcontractor and manufacturer shall be required to provide a fifteen (15) years warranty for the entire bituminous waterproofing system covering materials, performance and workmanship, including but not limited to leakage, delamination, blistering and ponding-related failures.\"",
+      "Reasoning": "The same warranting parties are required to provide a warranty over essentially the same scope (Work in this Section vs the entire bituminous waterproofing system), but for different durations — 10 years versus 15 years. The performance bond, insurance terms and tender price all reflect a single warranty period; both cannot be in force."
+    },
+    {
+      "Statement1": "§6.03 (Warranty): \"The Main Contractor shall remain solely liable for all substrate defects identified at any time during the warranty period, regardless of when they are discovered and regardless of any subsequent application of finishes, screeds, or membranes by other parties. No subsequent acceptance of the substrate by any subcontractor shall transfer or diminish the Main Contractor's liability under this clause.\"",
+      "Statement2": "§8.01.5 (Execution): \"Commencement of priming by the Waterproofing Subcontractor shall constitute final and unconditional acceptance of the substrate. The Waterproofing Subcontractor thereafter accepts full liability for any defects in the waterproofing system, including those arising from substrate-related causes, and shall bear all costs of investigation and remediation of such defects throughout the warranty period.\"",
+      "Reasoning": "§6 fixes substrate-defect liability with the Main Contractor for the full warranty period and explicitly prevents transfer through subcontractor acceptance. §8 then says commencement of priming by the Waterproofing Subcontractor transfers full liability for substrate-related causes to the Subcontractor. The transfer mechanism in §8 is precisely what §6 explicitly disclaims; insurance and indemnity allocation cannot be resolved without choosing one of the two clauses to govern."
+    },
+    {
+      "Statement1": "§8.06.4 (Execution): \"All costs of remedial works arising from flood test failures, including but not limited to membrane re-application, additional materials, labour, and re-testing, shall be borne entirely by the Waterproofing Subcontractor at no cost to the Employer or the Main Contractor, irrespective of the cause of the failure.\"",
+      "Statement2": "§6.04 (Warranty): \"Where flood test failures or other waterproofing failures are determined by the Engineer to be attributable wholly or in part to substrate conditions, the cost of remedial works shall be apportioned between the Employer and the Main Contractor on a 50/50 basis, with the Waterproofing Subcontractor held harmless for all substrate-related failures.\"",
+      "Reasoning": "§8 places 100% of flood-test remedial cost on the Waterproofing Subcontractor and explicitly states this applies irrespective of cause. §6 carves out substrate-attributable failures, splits that cost 50/50 between the Employer and the Main Contractor, and holds the Subcontractor harmless. For any failure attributable to substrate conditions, the two clauses prescribe mutually exclusive cost allocations."
+    },
+    {
+      "Statement1": "§7.01.2 (Products): \"Allow primer to cure for a minimum of 24 hours before membrane application. Membrane shall not be torched onto primer that has not fully cured. Primer that has cured beyond 72 hours shall be reapplied at no additional cost.\"",
+      "Statement2": "§8.03.2 (Execution): \"The membrane shall be applied within 4 hours of primer application, while the primer is still tacky to the touch but not transferring to a finger when pressed firmly. Should this window be exceeded, the area shall be re-primed before the membrane is applied.\"",
+      "Reasoning": "§7 requires a fully cured primer with a 24-hour minimum wait before membrane application; §8 requires the membrane to be applied within 4 hours while the primer is still tacky — an explicitly uncured state. The two clauses describe opposite physical conditions of the primer at the moment the membrane is torched on, so they cannot both be satisfied."
+    },
+    {
+      "Statement1": "§8.01.2 (Execution): \"New concrete shall be cured for not less than 28 days prior to membrane application. Substrate moisture content shall not exceed 5% by weight at time of priming.\"",
+      "Statement2": "§3.01.5 (Performance Requirement): \"For projects with accelerated construction programmes, the Engineer may permit membrane application on concrete substrates that have cured for a minimum of 14 days, provided that moisture content does not exceed 5% by weight and that compressive cube strength has reached the design value.\"",
+      "Reasoning": "§8 imposes a hard 28-day cure period for new concrete with no exceptions noted. §3 introduces a 14-day allowance for accelerated programmes, conditional on Engineer discretion and moisture/strength criteria. The 14-day allowance is a defensible carve-out, but §8 does not acknowledge or cross-reference it, leaving the two clauses in tension. This is a softer contradiction than a clean numerical disagreement — useful as the ambiguous test case."
+    }
+  ]
+}

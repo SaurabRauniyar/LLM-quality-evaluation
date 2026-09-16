@@ -1,0 +1,6 @@
+Sentence-Transformers
+
+
+openai
+python-dotenv
+pypdf

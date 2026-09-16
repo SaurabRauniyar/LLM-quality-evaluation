@@ -1,0 +1,195 @@
+LLM QUALITY EVALUATION REPORT
+
+Task 1 – Contradiction Extraction
+
+For Task 1, I implemented a single-pass LLM approach.
+
+The complete waterproofing specification was extracted from the PDF and sent to the model in one request.
+
+The model was instructed to identify internal contradictions in four categories:
+
+Technical
+Responsibility
+Liability
+Schedule
+
+The model returned the results in structured JSON using:
+
+Statement1
+Statement2
+Reasoning
+
+This approach is simple because it requires only one LLM call.
+
+The main limitation is that the model has to analyse the whole document at once. Because of this, some less obvious contradictions may be missed.
+
+When I evaluated the Task 1 output against the provided ground truth, the result was:
+
+TP = 8
+FP = 0
+FN = 2
+Precision = 1.00
+Recall = 0.80
+F1 = 0.89
+
+2. Goal of Task 2
+
+The purpose of this task was to compare Model 1 and Model 2 against the ground truth.
+
+The ground truth contains 10 known contradictions from the waterproofing specification.
+
+I wanted to check two things:
+
+How many real contradictions each model found.
+
+How many wrong contradictions, or false alarms, each model produced.
+
+
+3. How I matched the results
+
+The wording in the model outputs is not always exactly the same as the wording in the ground truth.
+
+Because of that, I did not use exact text matching.
+
+For each contradiction, I combined Statement1, Statement2, and Reasoning into one text.
+
+Then I converted the text into embeddings using the pretrained model:
+
+all-MiniLM-L6-v2
+
+I compared the model predictions with the ground-truth contradictions using cosine similarity.
+
+For each prediction, I looked at the ground-truth item with the highest similarity score.
+
+I used a threshold of 0.53.
+
+If the score was 0.53 or higher, I treated it as a match.
+
+If the score was below 0.53, I treated it as no match.
+
+I used the same threshold for both models.
+
+I chose 0.53 after checking the similarity scores against the manual matches. In this dataset, the valid matches were above the strongest incorrect matches, so 0.53 gave a reasonable separation.
+
+A ground-truth contradiction could only be matched once. This prevented multiple predictions from receiving credit for the same contradiction.
+
+
+4. Evaluation Metrics
+
+I used Precision, Recall, and F1-score.
+
+Precision measures how many of the contradictions reported by a model were actually correct.
+
+Precision = TP / (TP + FP)
+
+Recall measures how many of the real contradictions in the ground truth were found.
+
+Recall = TP / (TP + FN)
+
+F1-score balances Precision and Recall.
+
+F1 = 2 × Precision × Recall / (Precision + Recall)
+
+Where:
+
+TP = True Positive
+FP = False Positive
+FN = False Negative
+
+
+5. Results
+
++---------+----+----+----+-----------+--------+------+
+| Model   | TP | FP | FN | Precision | Recall | F1   |
++---------+----+----+----+-----------+--------+------+
+| Model 1 |  8 |  2 |  2 |   0.80    |  0.80  | 0.80 |
+| Model 2 |  6 |  4 |  4 |   0.60    |  0.60  | 0.60 |
++---------+----+----+----+-----------+--------+------+
+
+
+6. What the results mean
+
+Model 1 found 8 of the 10 real contradictions.
+
+It missed 2 real contradictions and produced 2 false alarms.
+
+Model 2 found 6 of the 10 real contradictions.
+
+It missed 4 real contradictions and produced 4 false alarms.
+
+Model 1 performed better in this test because it found more real contradictions and produced fewer wrong ones.
+
+
+7. Simple comparison
+
+Precision
+
+Model 1  ████████  0.80
+Model 2  ██████    0.60
+
+Recall
+
+Model 1  ████████  0.80
+Model 2  ██████    0.60
+
+F1 Score
+
+Model 1  ████████  0.80
+Model 2  ██████    0.60
+
+
+8. Which model looks safer
+
+For this test, Model 1 looks safer than Model 2.
+
+It catches more of the real problems and gives fewer false alarms.
+
+This matters because both mistakes have a cost.
+
+A false alarm means someone may spend time checking something that is not actually a contradiction.
+
+A missed contradiction is more serious because a real issue in the document may go unnoticed.
+
+Based on this dataset, Model 1 would be the better model to take forward for further testing.
+
+
+9. Limitations
+
+This evaluation is based on only one specification containing 10 known contradictions.
+
+Because the dataset is small, the results should not be treated as proof of general production performance.
+
+The evaluation also depends on the embedding model and the similarity threshold.
+
+The threshold of 0.53 was selected using this dataset, so it may not be optimal for other documents.
+
+The Task 1 approach also uses a single-pass LLM call. This makes the implementation simple and inexpensive, but the model has to analyse the complete document at once. On larger or more complex specifications, it may miss subtle contradictions.
+
+For a production system, I would evaluate the method on a larger set of manually reviewed construction documents and tune the matching threshold on a separate validation set.
+
+
+Conclusion
+
+Model 1 performed better than Model 2 on this benchmark.
+
+Model 1 achieved:
+
+Precision = 0.80
+Recall = 0.80
+F1 = 0.80
+
+Model 2 achieved:
+
+Precision = 0.60
+Recall = 0.60
+F1 = 0.60
+
+My Task 1 model achieved:
+
+Precision = 1.00
+Recall = 0.80
+F1 = 0.89
+
+The Task 1 model achieved the highest precision and F1-score while maintaining the same recall as Model 1.
+
+However, because the evaluation contains only 10 ground-truth contradictions, the result should be considered an initial benchmark rather than a final production decision.
