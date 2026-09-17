@@ -140,27 +140,6 @@ F1 = 2 × Precision × Recall / (Precision + Recall)
 
 ---
 
-## 📁 Repository Structure
-
-```text
-LLM_quality_assignment/
-│
-├── SECTION_071400_Bituminous_Waterproofing_System.pdf
-├── ground_truth.json
-├── model_1_output.json
-├── model_2_output.json
-├── my_model_output.json
-├── task1_extract.py
-├── evaluate.py
-├── evaluate_task1.py
-├── report.txt
-├── report.html
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## ⚙️ Setup
 
 ```bash
